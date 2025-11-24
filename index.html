@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Практична 2 — Інтерактивний сайт</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <h1>Мій інтерактивний сайт</h1>
+    <button id="openModalBtn" class="btn">Відкрити модальне вікно</button>
+</header>
+
+<main>
+    <section class="hero">
+        <p>Прокрути сторінку для ефекту.</p>
+    </section>
+
+    <section class="posts">
+        <h2>Пости з JSONPlaceholder</h2>
+        <div id="postsContainer"></div>
+        <button id="loadMoreBtn" class="btn">Завантажити ще</button>
+    </section>
+</main>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <button id="closeModalBtn" class="modal-close">×</button>
+        <h3>Модальне вікно</h3>
+        <p>Цей текст отримано з TypeScript-коду.</p>
+    </div>
+</div>
+
+<script src="dist/main.js"></script>
+</body>
+</html>
